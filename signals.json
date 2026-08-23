@@ -1,4 +1,51 @@
 {
-  "trades": [],
-  "last_updated": null
+  "trades": [
+    {
+      "id": "Step Index|2026-08-23T22:00:00+00:00|SELL|closed",
+      "asset": "Step Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 7824.2,
+      "sl": 7826.9,
+      "tp1": 7821.5,
+      "tp2": 7818.8,
+      "tp3": 7816.1,
+      "decimals": 1,
+      "signal_time": "2026-08-23T22:00:00+00:00",
+      "sent_at": "2026-08-23T22:21:03.331882+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-23T22:00:00+00:00"
+    },
+    {
+      "id": "Volatility 100 Index|2026-08-23T22:00:00+00:00|SELL|closed",
+      "asset": "Volatility 100 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 617.88,
+      "sl": 619.03,
+      "tp1": 616.73,
+      "tp2": 615.58,
+      "tp3": 614.43,
+      "decimals": 2,
+      "signal_time": "2026-08-23T22:00:00+00:00",
+      "sent_at": "2026-08-23T22:21:04.264701+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-23T22:00:00+00:00"
+    }
+  ],
+  "last_updated": "2026-08-23T22:21:04.264784+00:00"
 }
