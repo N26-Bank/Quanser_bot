@@ -1,4 +1,28 @@
 {
-  "trades": [],
-  "last_updated": null
+  "trades": [
+    {
+      "id": "Boom 1000 Index|2026-08-23T16:30:00+00:00|SELL|closed",
+      "asset": "Boom 1000 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 15070.917,
+      "sl": 15110.528,
+      "tp1": 15031.306,
+      "tp2": 14991.695,
+      "tp3": 14952.084,
+      "decimals": 3,
+      "signal_time": "2026-08-23T16:30:00+00:00",
+      "sent_at": "2026-08-23T16:51:59.738104+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-23T16:30:00+00:00"
+    }
+  ],
+  "last_updated": "2026-08-23T16:51:59.738200+00:00"
 }
