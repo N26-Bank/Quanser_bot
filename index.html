@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BenzFx Signal Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0F14;
+    --surface:#121822;
+    --surface-2:#182130;
+    --border:#232C3A;
+    --text:#E8ECF1;
+    --muted:#7C8B9C;
+    --win:#3ECF8E;
+    --win-dim:#1B3D30;
+    --loss:#FF5C5C;
+    --loss-dim:#3D1F22;
+    --pending:#F5A623;
+    --buy:#4EA1FF;
+    --sell:#FF8A3D;
+    --track:#232C3A;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .mono{
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+  }
+
+  a{color:inherit;}
+
+  /* ---------------- layout ---------------- */
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:28px 20px 80px;
+  }
+
+  header.top{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:28px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--border);
+  }
+
+  .brand{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+
+  .brand h1{
+    font-size:20px;
+    letter-spacing:0.02em;
+    margin:0;
+    font-weight:700;
+  }
+
+  .brand .tag{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--muted);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    border:1px solid var(--border);
+    padding:3px 8px;
+    border-radius:3px;
+  }
+
+  .live-pill{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--muted);
+  }
+
+  .dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--win);
+    box-shadow:0 0 0 0 rgba(62,207,142,0.6);
+    animation:pulse 2.2s infinite;
+  }
+
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(62,207,142,0.55);}
+    70%{box-shadow:0 0 0 7px rgba(62,207,142,0);}
+    100%{box-shadow:0 0 0 0 rgba(62,207,142,0);}
+  }
+
+  /* ---------------- stat cards ---------------- */
+
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+    margin-bottom:26px;
+  }
+
+  .stat{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:16px 16px 14px;
+  }
+
+  .stat .label{
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:10px;
+  }
+
+  .stat .value{
+    font-family:'JetBrains Mono',monospace;
+    font-size:26px;
+    font-weight:600;
+    line-height:1;
+  }
+
+  .stat .value.win{color:var(--win);}
+  .stat .value.loss{color:var(--loss);}
+  .stat .value.pending{color:var(--pending);}
+
+  .stat .sub{
+    margin-top:6px;
+    font-size:11px;
+    color:var(--muted);
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  /* ---------------- daily strip ---------------- */
+
+  .section-title{
+    font-size:12px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 12px;
+  }
+
+  .daily{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding-bottom:6px;
+    margin-bottom:30px;
+  }
+
+  .day-card{
+    flex:0 0 auto;
+    min-width:88px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 12px;
+    text-align:center;
+  }
+
+  .day-card .date{
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;
+    color:var(--muted);
+    margin-bottom:8px;
+  }
+
+  .day-card .rate{
+    font-family:'JetBrains Mono',monospace;
+    font-size:18px;
+    font-weight:700;
+  }
+
+  .day-card .count{
+    font-size:10px;
+    color:var(--muted);
+    margin-top:4px;
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  .bar-bg{
+    height:4px;
+    border-radius:2px;
+    background:var(--track);
+    margin-top:8px;
+    overflow:hidden;
+  }
+
+  .bar-fill{
+    height:100%;
+    background:var(--win);
+  }
+
+  /* ---------------- filters ---------------- */
+
+  .filters{
+    display:flex;
+    gap:8px;
+    margin-bottom:16px;
+    flex-wrap:wrap;
+  }
+
+  .filters button{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:0.03em;
+    background:var(--surface);
+    color:var(--muted);
+    border:1px solid var(--border);
+    padding:7px 13px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+
+  .filters button:hover{
+    color:var(--text);
+    border-color:#324256;
+  }
+
+  .filters button.active{
+    background:var(--surface-2);
+    color:var(--text);
+    border-color:#3A4A60;
+  }
+
+  /* ---------------- trades table ---------------- */
+
+  .trades{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .trade{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:14px 16px;
+    display:grid;
+    grid-template-columns:170px 70px 120px 1fr 110px;
+    align-items:center;
+    gap:16px;
+  }
+
+  .trade .asset{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+  }
+
+  .trade .asset .name{
+    font-weight:600;
+    font-size:13.5px;
+  }
+
+  .trade .asset .engine{
+    font-size:10.5px;
+    color:var(--muted);
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  .dir{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.04em;
+    padding:3px 8px;
+    border-radius:4px;
+    text-align:center;
+    width:fit-content;
+  }
+
+  .dir.buy{color:var(--buy);background:rgba(78,161,255,0.12);}
+  .dir.sell{color:var(--sell);background:rgba(255,138,61,0.12);}
+
+  .prices{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+
+  .prices b{color:var(--text);font-weight:500;}
+
+  /* signature element: TP ladder */
+
+  .ladder{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+  }
+
+  .ladder-track{
+    position:relative;
+    height:6px;
+    border-radius:3px;
+    background:var(--track);
+  }
+
+  .ladder-fill{
+    position:absolute;
+    top:0;left:0;bottom:0;
+    border-radius:3px;
+    background:linear-gradient(90deg,var(--win),#69e0ac);
+  }
+
+  .ladder-fill.loss{
+    background:linear-gradient(90deg,var(--loss),#ff8a8a);
+  }
+
+  .ladder-marks{
+    position:absolute;
+    top:-3px;
+    bottom:-3px;
+    width:2px;
+    background:var(--bg);
+  }
+
+  .ladder-labels{
+    display:flex;
+    justify-content:space-between;
+    font-family:'JetBrains Mono',monospace;
+    font-size:9.5px;
+    color:var(--muted);
+  }
+
+  .ladder-labels span.hit{color:var(--win);font-weight:700;}
+  .ladder-labels span.sl-hit{color:var(--loss);font-weight:700;}
+
+  .outcome{
+    text-align:right;
+  }
+
+  .outcome .badge{
+    display:inline-block;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    padding:4px 10px;
+    border-radius:20px;
+  }
+
+  .badge.WIN, .badge.WIN_PARTIAL_EXPIRED{
+    background:var(--win-dim);color:var(--win);
+  }
+
+  .badge.LOSS{
+    background:var(--loss-dim);color:var(--loss);
+  }
+
+  .badge.WIN_THEN_SL{
+    background:linear-gradient(90deg,var(--win-dim),var(--loss-dim));
+    color:var(--text);
+  }
+
+  .badge.OPEN{
+    background:rgba(245,166,35,0.12);color:var(--pending);
+  }
+
+  .badge.EXPIRED_NO_HIT{
+    background:var(--surface-2);color:var(--muted);
+  }
+
+  .outcome .time{
+    display:block;
+    margin-top:6px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10px;
+    color:var(--muted);
+  }
+
+  .live-tag{
+    font-size:9px;
+    color:var(--pending);
+    font-family:'JetBrains Mono',monospace;
+    margin-left:6px;
+  }
+
+  /* empty state */
+
+  .empty{
+    text-align:center;
+    padding:70px 20px;
+    color:var(--muted);
+    border:1px dashed var(--border);
+    border-radius:10px;
+  }
+
+  .empty h3{
+    color:var(--text);
+    font-size:16px;
+    margin:0 0 8px;
+  }
+
+  .empty p{
+    font-size:13px;
+    line-height:1.6;
+    max-width:420px;
+    margin:0 auto;
+  }
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:11px;
+    color:var(--muted);
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  /* ---------------- responsive ---------------- */
+
+  @media (max-width:900px){
+    .stats{grid-template-columns:repeat(2,1fr);}
+  }
+
+  @media (max-width:720px){
+    .trade{
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .outcome{text-align:left;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .dot{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>BENZFX SIGNAL DESK</h1>
+      <span class="tag">M15 · EMA9/21 + RSI50</span>
+    </div>
+    <div class="live-pill">
+      <span class="dot"></span>
+      <span id="lastUpdated">loading…</span>
+    </div>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div id="dailySection">
+    <p class="section-title">Daily win rate</p>
+    <div class="daily" id="daily"></div>
+  </div>
+
+  <p class="section-title">Signals</p>
+  <div class="filters" id="filters"></div>
+  <div class="trades" id="trades"></div>
+
+  <footer>BenzFx Intraday · this dashboard shows signals only, it does not place trades</footer>
+
+</div>
+
+<script>
+const DATA_URL = "signals.json";
+
+const OUTCOME_LABEL = {
+  WIN: "WIN",
+  LOSS: "LOSS",
+  WIN_THEN_SL: "TP1 THEN SL",
+  WIN_PARTIAL_EXPIRED: "TP1 (EXPIRED)",
+  EXPIRED_NO_HIT: "EXPIRED",
+  PENDING: "OPEN",
+};
+
+function fmtPrice(v, decimals){
+  if (v === null || v === undefined) return "—";
+  return Number(v).toFixed(decimals ?? 2);
+}
+
+function fmtPct(n){
+  return (Number.isFinite(n) ? n.toFixed(1) : "0.0") + "%";
+}
+
+function dateKey(iso){
+  return iso ? iso.slice(0,10) : "unknown";
+}
+
+function relTime(iso){
+  if(!iso) return "";
+  const then = new Date(iso).getTime();
+  const diffMin = Math.round((Date.now() - then) / 60000);
+  if (diffMin < 1) return "just now";
+  if (diffMin < 60) return diffMin + "m ago";
+  const h = Math.round(diffMin/60);
+  if (h < 48) return h + "h ago";
+  return Math.round(h/24) + "d ago";
+}
+
+function isWin(t){
+  return t.outcome === "WIN" || t.outcome === "WIN_THEN_SL" || t.outcome === "WIN_PARTIAL_EXPIRED";
+}
+function isLoss(t){
+  return t.outcome === "LOSS";
+}
+function isResolved(t){
+  return t.status === "CLOSED";
+}
+
+function buildStats(trades){
+  const total = trades.length;
+  const open = trades.filter(t => t.status === "OPEN").length;
+  const wins = trades.filter(isWin).length;
+  const losses = trades.filter(isLoss).length;
+  const resolvedForRate = wins + losses;
+  const winRate = resolvedForRate ? (wins/resolvedForRate)*100 : 0;
+  const tp3s = trades.filter(t => t.tp3_hit).length;
+
+  const cards = [
+    {label:"Total signals", value: total, cls:""},
+    {label:"Win rate", value: fmtPct(winRate), cls: winRate>=50 ? "win":"loss"},
+    {label:"Wins", value: wins, cls:"win", sub: losses+" losses"},
+    {label:"Open / tracking", value: open, cls:"pending"},
+    {label:"Full TP3 runs", value: tp3s, cls:"win"},
+  ];
+
+  const el = document.getElementById("stats");
+  el.innerHTML = cards.map(c => `
+    <div class="stat">
+      <div class="label">${c.label}</div>
+      <div class="value ${c.cls}">${c.value}</div>
+      ${c.sub ? `<div class="sub">${c.sub}</div>` : ""}
+    </div>
+  `).join("");
+}
+
+function buildDaily(trades){
+  const byDay = {};
+  trades.forEach(t => {
+    const k = dateKey(t.signal_time);
+    byDay[k] = byDay[k] || [];
+    byDay[k].push(t);
+  });
+
+  const days = Object.keys(byDay).sort().reverse().slice(0,14);
+  const el = document.getElementById("daily");
+
+  if(!days.length){
+    document.getElementById("dailySection").style.display = "none";
+    return;
+  }
+
+  el.innerHTML = days.map(day => {
+    const list = byDay[day];
+    const wins = list.filter(isWin).length;
+    const losses = list.filter(isLoss).length;
+    const resolved = wins + losses;
+    const rate = resolved ? (wins/resolved)*100 : null;
+    const label = day === new Date().toISOString().slice(0,10) ? "Today" : day.slice(5);
+
+    return `
+      <div class="day-card">
+        <div class="date">${label}</div>
+        <div class="rate" style="color:${rate===null ? 'var(--muted)' : (rate>=50?'var(--win)':'var(--loss)')}">
+          ${rate===null ? '—' : Math.round(rate)+'%'}
+        </div>
+        <div class="count">${list.length} signal${list.length===1?'':'s'}</div>
+        <div class="bar-bg"><div class="bar-fill" style="width:${rate??0}%;background:${rate===null?'var(--track)':(rate>=50?'var(--win)':'var(--loss)')}"></div></div>
+      </div>
+    `;
+  }).join("");
+}
+
+function ladderHTML(t){
+  // positions along the ladder from SL (0%) through entry to TP3 (100%)
+  const dir = t.direction;
+  const vals = dir === "BUY"
+    ? [t.sl, t.entry, t.tp1, t.tp2, t.tp3]
+    : [t.tp3, t.tp2, t.tp1, t.entry, t.sl];
+
+  const min = Math.min(...vals);
+  const max = Math.max(...vals);
+  const span = (max - min) || 1;
+  const pct = v => ((v - min) / span) * 100;
+
+  let fillPct = 0;
+  let cls = "";
+  if (t.sl_hit && !t.tp1_hit){
+    fillPct = 8; // small stub toward SL side — stopped out before TP1
+    cls = "loss";
+  } else {
+    const reached = t.tp3_hit ? t.tp3 : t.tp2_hit ? t.tp2 : t.tp1_hit ? t.tp1 : t.entry;
+    fillPct = dir === "BUY" ? pct(reached) : (100 - pct(reached));
+    cls = t.sl_hit ? "loss" : "";
+  }
+
+  const entryPct = dir === "BUY" ? pct(t.entry) : (100 - pct(t.entry));
+
+  return `
+    <div class="ladder">
+      <div class="ladder-track">
+        <div class="ladder-fill ${cls}" style="width:${fillPct}%"></div>
+        <div class="ladder-marks" style="left:${entryPct}%"></div>
+      </div>
+      <div class="ladder-labels">
+        <span class="${t.sl_hit ? 'sl-hit' : ''}">SL</span>
+        <span class="${t.tp1_hit ? 'hit' : ''}">TP1</span>
+        <span class="${t.tp2_hit ? 'hit' : ''}">TP2</span>
+        <span class="${t.tp3_hit ? 'hit' : ''}">TP3</span>
+      </div>
+    </div>
+  `;
+}
+
+function tradeHTML(t){
+  const outcomeLabel = OUTCOME_LABEL[t.outcome] || t.outcome || "OPEN";
+  const badgeClass = t.status === "OPEN" ? "OPEN" : (t.outcome || "OPEN");
+
+  return `
+    <div class="trade">
+      <div class="asset">
+        <div class="name">${t.asset}${t.is_live_candle ? '<span class="live-tag">LIVE</span>' : ''}</div>
+        <div class="engine">${t.engine || ''}</div>
+      </div>
+
+      <div class="dir ${t.direction === 'BUY' ? 'buy' : 'sell'}">${t.direction}</div>
+
+      <div class="prices">
+        Entry <b>${fmtPrice(t.entry, t.decimals)}</b><br/>
+        SL <b>${fmtPrice(t.sl, t.decimals)}</b>
+      </div>
+
+      ${ladderHTML(t)}
+
+      <div class="outcome">
+        <span class="badge ${badgeClass}">${outcomeLabel}</span>
+        <span class="time">${relTime(t.resolved_at || t.sent_at)}</span>
+      </div>
+    </div>
+  `;
+}
+
+let ALL_TRADES = [];
+let CURRENT_FILTER = "all";
+
+function applyFilter(trades){
+  switch(CURRENT_FILTER){
+    case "open": return trades.filter(t => t.status === "OPEN");
+    case "wins": return trades.filter(isWin);
+    case "losses": return trades.filter(isLoss);
+    default: return trades;
+  }
+}
+
+function renderTrades(){
+  const el = document.getElementById("trades");
+  const filtered = applyFilter(ALL_TRADES)
+    .slice()
+    .sort((a,b) => new Date(b.sent_at) - new Date(a.sent_at));
+
+  if(!filtered.length){
+    el.innerHTML = `<div class="empty"><h3>No signals here yet</h3><p>Once the scanner sends a confirmed signal, it'll show up here with live TP1/TP2/TP3 tracking.</p></div>`;
+    return;
+  }
+
+  el.innerHTML = filtered.map(tradeHTML).join("");
+}
+
+function buildFilters(){
+  const opts = [
+    {id:"all", label:"All"},
+    {id:"open", label:"Open"},
+    {id:"wins", label:"Wins"},
+    {id:"losses", label:"Losses"},
+  ];
+  const el = document.getElementById("filters");
+  el.innerHTML = opts.map(o => `<button data-f="${o.id}" class="${o.id===CURRENT_FILTER?'active':''}">${o.label}</button>`).join("");
+  el.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      CURRENT_FILTER = btn.dataset.f;
+      el.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderTrades();
+    });
+  });
+}
+
+async function load(){
+  try{
+    const res = await fetch(DATA_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    ALL_TRADES = data.trades || [];
+
+    document.getElementById("lastUpdated").textContent =
+      data.last_updated ? ("updated " + relTime(data.last_updated)) : "no data yet";
+
+    buildStats(ALL_TRADES);
+    buildDaily(ALL_TRADES);
+    buildFilters();
+    renderTrades();
+
+  } catch(err){
+    document.getElementById("lastUpdated").textContent = "no data yet";
+    document.getElementById("stats").innerHTML = "";
+    document.getElementById("dailySection").style.display = "none";
+    document.getElementById("filters").innerHTML = "";
+    document.getElementById("trades").innerHTML = `
+      <div class="empty">
+        <h3>Dashboard not connected yet</h3>
+        <p>Couldn't load <code>signals.json</code>. Make sure your workflow commits it to <code>docs/signals.json</code> and that GitHub Pages is serving from the <code>/docs</code> folder.</p>
+      </div>
+    `;
+  }
+}
+
+load();
+// Refresh in-browser every 2 minutes in case the page is left open.
+setInterval(load, 120000);
+</script>
+
+</body>
+  </html>
+  
