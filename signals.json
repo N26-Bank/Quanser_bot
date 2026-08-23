@@ -1,28 +1,4 @@
 {
-  "trades": [
-    {
-      "id": "Jump 25 Index|2026-08-23T17:00:00+00:00|BUY|closed",
-      "asset": "Jump 25 Index",
-      "engine": "Deriv Synthetic",
-      "direction": "BUY",
-      "entry": 118102.18,
-      "sl": 117652.14,
-      "tp1": 118552.22,
-      "tp2": 119002.27,
-      "tp3": 119452.31,
-      "decimals": 2,
-      "signal_time": "2026-08-23T17:00:00+00:00",
-      "sent_at": "2026-08-23T17:19:42.027821+00:00",
-      "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-23T17:00:00+00:00"
-    }
-  ],
-  "last_updated": "2026-08-23T17:19:42.027919+00:00"
+  "trades": [],
+  "last_updated": null
 }
