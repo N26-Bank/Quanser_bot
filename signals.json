@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "Jump 25 Index|2026-08-24T16:00:00+00:00|BUY|closed",
-      "asset": "Jump 25 Index",
+      "id": "Volatility 75 Index|2026-08-24T16:30:00+00:00|BUY|closed",
+      "asset": "Volatility 75 Index",
       "engine": "Deriv Synthetic",
       "direction": "BUY",
-      "entry": 119686.23,
-      "sl": 119228.02,
-      "tp1": 120144.44,
-      "tp2": 120602.65,
-      "tp3": 121060.86,
-      "decimals": 2,
-      "signal_time": "2026-08-24T16:00:00+00:00",
-      "sent_at": "2026-08-24T16:17:02.681701+00:00",
+      "entry": 51987.6624,
+      "sl": 51915.4608,
+      "tp1": 52059.864,
+      "tp2": 52132.0656,
+      "tp3": 52204.2672,
+      "decimals": 4,
+      "signal_time": "2026-08-24T16:30:00+00:00",
+      "sent_at": "2026-08-24T16:55:49.678058+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T16:00:00+00:00"
+      "last_checked_time": "2026-08-24T16:30:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T16:17:02.681790+00:00"
+  "last_updated": "2026-08-24T16:55:49.678148+00:00"
 }
