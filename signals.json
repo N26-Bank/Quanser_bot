@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "BTCUSD|2026-08-24T11:30:00+00:00|BUY|closed",
-      "asset": "BTCUSD",
-      "engine": "Crypto",
+      "id": "Volatility 10 (1s) Index|2026-08-24T12:30:00+00:00|BUY|closed",
+      "asset": "Volatility 10 (1s) Index",
+      "engine": "Deriv Synthetic",
       "direction": "BUY",
-      "entry": 78568.7,
-      "sl": 77822.4,
-      "tp1": 78569.98,
-      "tp2": 78569.99,
-      "tp3": 80807.6,
+      "entry": 9726.11,
+      "sl": 9721.68,
+      "tp1": 9730.54,
+      "tp2": 9734.97,
+      "tp3": 9739.41,
       "decimals": 2,
-      "signal_time": "2026-08-24T11:30:00+00:00",
-      "sent_at": "2026-08-24T11:56:23.291450+00:00",
+      "signal_time": "2026-08-24T12:30:00+00:00",
+      "sent_at": "2026-08-24T12:54:22.135047+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T11:30:00+00:00"
+      "last_checked_time": "2026-08-24T12:30:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T11:56:23.291568+00:00"
+  "last_updated": "2026-08-24T12:54:22.135134+00:00"
 }
