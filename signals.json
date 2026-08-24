@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "Volatility 75 Index|2026-08-24T16:30:00+00:00|BUY|closed",
-      "asset": "Volatility 75 Index",
+      "id": "Volatility 10 Index|2026-08-24T17:15:00+00:00|SELL|closed",
+      "asset": "Volatility 10 Index",
       "engine": "Deriv Synthetic",
-      "direction": "BUY",
-      "entry": 51987.6624,
-      "sl": 51915.4608,
-      "tp1": 52059.864,
-      "tp2": 52132.0656,
-      "tp3": 52204.2672,
-      "decimals": 4,
-      "signal_time": "2026-08-24T16:30:00+00:00",
-      "sent_at": "2026-08-24T16:55:49.678058+00:00",
+      "direction": "SELL",
+      "entry": 4765.927,
+      "sl": 4767.63,
+      "tp1": 4764.224,
+      "tp2": 4762.521,
+      "tp3": 4760.818,
+      "decimals": 3,
+      "signal_time": "2026-08-24T17:15:00+00:00",
+      "sent_at": "2026-08-24T17:31:37.159267+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T16:30:00+00:00"
+      "last_checked_time": "2026-08-24T17:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T16:55:49.678148+00:00"
+  "last_updated": "2026-08-24T17:31:37.159361+00:00"
 }
