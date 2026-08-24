@@ -1,28 +1,4 @@
 {
-  "trades": [
-    {
-      "id": "Volatility 90 Index|2026-08-24T04:00:00+00:00|BUY|closed",
-      "asset": "Volatility 90 Index",
-      "engine": "Deriv Synthetic",
-      "direction": "BUY",
-      "entry": 20154.357,
-      "sl": 20086.394,
-      "tp1": 20222.32,
-      "tp2": 20290.282,
-      "tp3": 20358.245,
-      "decimals": 3,
-      "signal_time": "2026-08-24T04:00:00+00:00",
-      "sent_at": "2026-08-24T04:29:29.065337+00:00",
-      "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-24T04:00:00+00:00"
-    }
-  ],
-  "last_updated": "2026-08-24T04:29:29.065481+00:00"
+  "trades": [],
+  "last_updated": null
 }
