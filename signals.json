@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "Volatility 100 (1s) Index|2026-08-24T15:00:00+00:00|SELL|closed",
-      "asset": "Volatility 100 (1s) Index",
+      "id": "Volatility 75 Index|2026-08-24T15:45:00+00:00|SELL|closed",
+      "asset": "Volatility 75 Index",
       "engine": "Deriv Synthetic",
       "direction": "SELL",
-      "entry": 726.59,
-      "sl": 732.67,
-      "tp1": 720.51,
-      "tp2": 714.42,
-      "tp3": 708.34,
-      "decimals": 2,
-      "signal_time": "2026-08-24T15:00:00+00:00",
-      "sent_at": "2026-08-24T15:23:22.582085+00:00",
+      "entry": 51859.8924,
+      "sl": 51915.0991,
+      "tp1": 51804.6857,
+      "tp2": 51749.479,
+      "tp3": 51694.2722,
+      "decimals": 4,
+      "signal_time": "2026-08-24T15:45:00+00:00",
+      "sent_at": "2026-08-24T16:04:18.530437+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,31 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T15:00:00+00:00"
+      "last_checked_time": "2026-08-24T15:45:00+00:00"
+    },
+    {
+      "id": "Volatility 25 Index|2026-08-24T15:45:00+00:00|SELL|closed",
+      "asset": "Volatility 25 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 2667.775,
+      "sl": 2677.328,
+      "tp1": 2658.222,
+      "tp2": 2648.67,
+      "tp3": 2639.117,
+      "decimals": 3,
+      "signal_time": "2026-08-24T15:45:00+00:00",
+      "sent_at": "2026-08-24T16:04:19.736866+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-24T15:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T15:23:22.582182+00:00"
+  "last_updated": "2026-08-24T16:04:19.736971+00:00"
 }
