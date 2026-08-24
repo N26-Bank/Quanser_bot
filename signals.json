@@ -1,28 +1,4 @@
 {
-  "trades": [
-    {
-      "id": "Volatility 10 Index|2026-08-24T17:15:00+00:00|SELL|closed",
-      "asset": "Volatility 10 Index",
-      "engine": "Deriv Synthetic",
-      "direction": "SELL",
-      "entry": 4765.927,
-      "sl": 4767.63,
-      "tp1": 4764.224,
-      "tp2": 4762.521,
-      "tp3": 4760.818,
-      "decimals": 3,
-      "signal_time": "2026-08-24T17:15:00+00:00",
-      "sent_at": "2026-08-24T17:31:37.159267+00:00",
-      "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-24T17:15:00+00:00"
-    }
-  ],
-  "last_updated": "2026-08-24T17:31:37.159361+00:00"
+  "trades": [],
+  "last_updated": null
 }
