@@ -1,4 +1,28 @@
 {
-  "trades": [],
-  "last_updated": null
+  "trades": [
+    {
+      "id": "Volatility 100 (1s) Index|2026-08-24T21:00:00+00:00|SELL|closed",
+      "asset": "Volatility 100 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 724.98,
+      "sl": 729.54,
+      "tp1": 720.42,
+      "tp2": 715.86,
+      "tp3": 711.3,
+      "decimals": 2,
+      "signal_time": "2026-08-24T21:00:00+00:00",
+      "sent_at": "2026-08-24T21:28:04.542399+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-24T21:00:00+00:00"
+    }
+  ],
+  "last_updated": "2026-08-24T21:28:04.542490+00:00"
 }
