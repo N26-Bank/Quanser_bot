@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "Volatility 10 (1s) Index|2026-08-24T00:45:00+00:00|BUY|closed",
-      "asset": "Volatility 10 (1s) Index",
+      "id": "Volatility 100 Index|2026-08-24T02:15:00+00:00|BUY|closed",
+      "asset": "Volatility 100 Index",
       "engine": "Deriv Synthetic",
       "direction": "BUY",
-      "entry": 9764.29,
-      "sl": 9756.42,
-      "tp1": 9772.16,
-      "tp2": 9780.04,
-      "tp3": 9787.91,
+      "entry": 623.07,
+      "sl": 616.76,
+      "tp1": 629.38,
+      "tp2": 635.69,
+      "tp3": 642.0,
       "decimals": 2,
-      "signal_time": "2026-08-24T00:45:00+00:00",
-      "sent_at": "2026-08-24T01:14:08.239199+00:00",
+      "signal_time": "2026-08-24T02:15:00+00:00",
+      "sent_at": "2026-08-24T02:38:49.006835+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,21 +21,21 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T00:45:00+00:00"
+      "last_checked_time": "2026-08-24T02:15:00+00:00"
     },
     {
-      "id": "Volatility 50 (1s) Index|2026-08-24T00:45:00+00:00|SELL|closed",
-      "asset": "Volatility 50 (1s) Index",
+      "id": "Volatility 10 (1s) Index|2026-08-24T02:15:00+00:00|SELL|closed",
+      "asset": "Volatility 10 (1s) Index",
       "engine": "Deriv Synthetic",
       "direction": "SELL",
-      "entry": 228412.02,
-      "sl": 229429.46,
-      "tp1": 227394.58,
-      "tp2": 226377.14,
-      "tp3": 225359.7,
+      "entry": 9743.28,
+      "sl": 9756.96,
+      "tp1": 9729.6,
+      "tp2": 9715.91,
+      "tp3": 9702.23,
       "decimals": 2,
-      "signal_time": "2026-08-24T00:45:00+00:00",
-      "sent_at": "2026-08-24T01:14:08.991715+00:00",
+      "signal_time": "2026-08-24T02:15:00+00:00",
+      "sent_at": "2026-08-24T02:38:49.816531+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -44,8 +44,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T00:45:00+00:00"
+      "last_checked_time": "2026-08-24T02:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T01:14:08.991821+00:00"
+  "last_updated": "2026-08-24T02:38:49.816654+00:00"
 }
