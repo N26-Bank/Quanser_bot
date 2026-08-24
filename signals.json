@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "Volatility 100 Index|2026-08-24T10:30:00+00:00|SELL|closed",
-      "asset": "Volatility 100 Index",
-      "engine": "Deriv Synthetic",
-      "direction": "SELL",
-      "entry": 613.65,
-      "sl": 619.71,
-      "tp1": 607.59,
-      "tp2": 601.53,
-      "tp3": 595.47,
+      "id": "BTCUSD|2026-08-24T11:00:00+00:00|BUY|closed",
+      "asset": "BTCUSD",
+      "engine": "Crypto",
+      "direction": "BUY",
+      "entry": 77819.05,
+      "sl": 77449.99,
+      "tp1": 77853.99,
+      "tp2": 78052.85,
+      "tp3": 78926.23,
       "decimals": 2,
-      "signal_time": "2026-08-24T10:30:00+00:00",
-      "sent_at": "2026-08-24T10:53:36.616426+00:00",
+      "signal_time": "2026-08-24T11:00:00+00:00",
+      "sent_at": "2026-08-24T11:28:03.633483+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T10:30:00+00:00"
+      "last_checked_time": "2026-08-24T11:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T10:53:36.616512+00:00"
+  "last_updated": "2026-08-24T11:28:03.633562+00:00"
 }
