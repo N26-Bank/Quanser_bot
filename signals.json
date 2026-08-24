@@ -1,18 +1,18 @@
 {
   "trades": [
     {
-      "id": "BTCUSD|2026-08-24T11:00:00+00:00|BUY|closed",
+      "id": "BTCUSD|2026-08-24T11:30:00+00:00|BUY|closed",
       "asset": "BTCUSD",
       "engine": "Crypto",
       "direction": "BUY",
-      "entry": 77819.05,
-      "sl": 77449.99,
-      "tp1": 77853.99,
-      "tp2": 78052.85,
-      "tp3": 78926.23,
+      "entry": 78568.7,
+      "sl": 77822.4,
+      "tp1": 78569.98,
+      "tp2": 78569.99,
+      "tp3": 80807.6,
       "decimals": 2,
-      "signal_time": "2026-08-24T11:00:00+00:00",
-      "sent_at": "2026-08-24T11:28:03.633483+00:00",
+      "signal_time": "2026-08-24T11:30:00+00:00",
+      "sent_at": "2026-08-24T11:56:23.291450+00:00",
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
@@ -21,8 +21,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-24T11:00:00+00:00"
+      "last_checked_time": "2026-08-24T11:30:00+00:00"
     }
   ],
-  "last_updated": "2026-08-24T11:28:03.633562+00:00"
+  "last_updated": "2026-08-24T11:56:23.291568+00:00"
 }
