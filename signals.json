@@ -60,14 +60,14 @@
       "signal_time": "2026-08-24T23:00:00+00:00",
       "sent_at": "2026-08-24T23:21:52.712914+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "WIN",
       "tp1_hit": true,
-      "tp2_hit": false,
-      "tp3_hit": false,
+      "tp2_hit": true,
+      "tp3_hit": true,
       "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-25T00:45:00+00:00"
+      "resolved_at": "2026-08-25T01:15:00+00:00",
+      "last_checked_time": "2026-08-25T01:15:00+00:00"
     },
     {
       "id": "BTCUSD|2026-08-25T00:45:00+00:00|BUY|closed",
@@ -83,15 +83,15 @@
       "signal_time": "2026-08-25T00:45:00+00:00",
       "sent_at": "2026-08-25T01:12:55.704649+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
+      "status": "CLOSED",
+      "outcome": "WIN",
+      "tp1_hit": true,
+      "tp2_hit": true,
+      "tp3_hit": true,
       "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-25T00:45:00+00:00"
+      "resolved_at": "2026-08-25T02:15:00+00:00",
+      "last_checked_time": "2026-08-25T02:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T01:13:00.535730+00:00"
+  "last_updated": "2026-08-25T02:32:14.628904+00:00"
 }
