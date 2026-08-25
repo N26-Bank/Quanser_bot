@@ -205,7 +205,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T10:45:00+00:00"
+      "last_checked_time": "2026-08-25T11:15:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -221,15 +221,61 @@
       "signal_time": "2026-08-25T10:15:00+00:00",
       "sent_at": "2026-08-25T10:32:14.569986+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "WIN_THEN_SL",
+      "tp1_hit": true,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": true,
+      "resolved_at": "2026-08-25T11:00:00+00:00",
+      "last_checked_time": "2026-08-25T11:00:00+00:00"
+    },
+    {
+      "id": "Crash 1000 Index|2026-08-25T11:15:00+00:00|SELL|closed",
+      "asset": "Crash 1000 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 6137.541,
+      "sl": 6139.482,
+      "tp1": 6135.6,
+      "tp2": 6133.659,
+      "tp3": 6131.718,
+      "decimals": 3,
+      "signal_time": "2026-08-25T11:15:00+00:00",
+      "sent_at": "2026-08-25T11:43:49.639209+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
-      "tp1_hit": true,
+      "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T10:45:00+00:00"
+      "last_checked_time": "2026-08-25T11:15:00+00:00"
+    },
+    {
+      "id": "Volatility 100 (1s) Index|2026-08-25T11:15:00+00:00|SELL|closed",
+      "asset": "Volatility 100 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 732.81,
+      "sl": 736.67,
+      "tp1": 728.95,
+      "tp2": 725.09,
+      "tp3": 721.23,
+      "decimals": 2,
+      "signal_time": "2026-08-25T11:15:00+00:00",
+      "sent_at": "2026-08-25T11:43:53.662776+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T11:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T11:04:55.792940+00:00"
+  "last_updated": "2026-08-25T11:43:53.662859+00:00"
 }
