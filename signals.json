@@ -205,7 +205,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T21:30:00+00:00"
+      "last_checked_time": "2026-08-25T22:00:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -343,7 +343,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T21:30:00+00:00"
+      "last_checked_time": "2026-08-25T22:00:00+00:00"
     },
     {
       "id": "GBPUSD|2026-08-25T14:00:00+00:00|BUY|closed",
@@ -412,7 +412,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T21:30:00+00:00"
+      "last_checked_time": "2026-08-25T22:00:00+00:00"
     },
     {
       "id": "EURUSD|2026-08-25T15:00:00+00:00|BUY|closed",
@@ -435,7 +435,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T21:30:00+00:00"
+      "last_checked_time": "2026-08-25T22:00:00+00:00"
     },
     {
       "id": "Volatility 90 Index|2026-08-25T15:45:00+00:00|BUY|closed",
@@ -530,5 +530,5 @@
       "last_checked_time": "2026-08-25T21:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T21:55:07.032942+00:00"
+  "last_updated": "2026-08-25T22:26:21.062457+00:00"
 }
