@@ -205,7 +205,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T22:30:00+00:00"
+      "last_checked_time": "2026-08-25T23:00:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -343,7 +343,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T22:30:00+00:00"
+      "last_checked_time": "2026-08-25T23:00:00+00:00"
     },
     {
       "id": "GBPUSD|2026-08-25T14:00:00+00:00|BUY|closed",
@@ -412,7 +412,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T22:30:00+00:00"
+      "last_checked_time": "2026-08-25T23:00:00+00:00"
     },
     {
       "id": "EURUSD|2026-08-25T15:00:00+00:00|BUY|closed",
@@ -435,7 +435,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T22:30:00+00:00"
+      "last_checked_time": "2026-08-25T23:00:00+00:00"
     },
     {
       "id": "Volatility 90 Index|2026-08-25T15:45:00+00:00|BUY|closed",
@@ -528,7 +528,30 @@
       "sl_hit": true,
       "resolved_at": "2026-08-25T21:15:00+00:00",
       "last_checked_time": "2026-08-25T21:15:00+00:00"
+    },
+    {
+      "id": "Boom 1000 Index|2026-08-25T23:00:00+00:00|BUY|closed",
+      "asset": "Boom 1000 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "BUY",
+      "entry": 15098.279,
+      "sl": 15058.406,
+      "tp1": 15138.152,
+      "tp2": 15178.025,
+      "tp3": 15217.897,
+      "decimals": 3,
+      "signal_time": "2026-08-25T23:00:00+00:00",
+      "sent_at": "2026-08-25T23:26:21.412290+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T23:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T22:56:20.800285+00:00"
+  "last_updated": "2026-08-25T23:26:22.678479+00:00"
 }
