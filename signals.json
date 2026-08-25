@@ -136,7 +136,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T08:00:00+00:00"
+      "last_checked_time": "2026-08-25T08:45:00+00:00"
     },
     {
       "id": "Jump 25 Index|2026-08-25T08:00:00+00:00|SELL|closed",
@@ -154,13 +154,13 @@
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
-      "tp1_hit": false,
+      "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T08:00:00+00:00"
+      "last_checked_time": "2026-08-25T08:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T08:23:48.079959+00:00"
+  "last_updated": "2026-08-25T09:08:24.001352+00:00"
 }
