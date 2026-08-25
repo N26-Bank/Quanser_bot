@@ -91,7 +91,30 @@
       "sl_hit": false,
       "resolved_at": "2026-08-25T02:15:00+00:00",
       "last_checked_time": "2026-08-25T02:15:00+00:00"
+    },
+    {
+      "id": "Volatility 100 (1s) Index|2026-08-25T03:15:00+00:00|BUY|closed",
+      "asset": "Volatility 100 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "BUY",
+      "entry": 736.78,
+      "sl": 732.94,
+      "tp1": 740.62,
+      "tp2": 744.46,
+      "tp3": 748.3,
+      "decimals": 2,
+      "signal_time": "2026-08-25T03:15:00+00:00",
+      "sent_at": "2026-08-25T03:31:37.197248+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T03:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T02:32:14.628904+00:00"
+  "last_updated": "2026-08-25T03:31:37.197333+00:00"
 }
