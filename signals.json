@@ -205,7 +205,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T16:30:00+00:00"
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -343,7 +343,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T16:30:00+00:00"
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
     },
     {
       "id": "GBPUSD|2026-08-25T14:00:00+00:00|BUY|closed",
@@ -412,7 +412,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T16:30:00+00:00"
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
     },
     {
       "id": "EURUSD|2026-08-25T15:00:00+00:00|BUY|closed",
@@ -435,7 +435,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T16:30:00+00:00"
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
     },
     {
       "id": "Volatility 90 Index|2026-08-25T15:45:00+00:00|BUY|closed",
@@ -453,13 +453,36 @@
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
+      "tp1_hit": true,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
+    },
+    {
+      "id": "Volatility 75 Index|2026-08-25T17:15:00+00:00|SELL|closed",
+      "asset": "Volatility 75 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 48778.6716,
+      "sl": 48827.4702,
+      "tp1": 48729.873,
+      "tp2": 48681.0744,
+      "tp3": 48632.2757,
+      "decimals": 4,
+      "signal_time": "2026-08-25T17:15:00+00:00",
+      "sent_at": "2026-08-25T17:31:43.166538+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T16:30:00+00:00"
+      "last_checked_time": "2026-08-25T17:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T16:55:31.899122+00:00"
+  "last_updated": "2026-08-25T17:31:43.626658+00:00"
 }
