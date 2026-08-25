@@ -136,8 +136,31 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T07:15:00+00:00"
+      "last_checked_time": "2026-08-25T08:00:00+00:00"
+    },
+    {
+      "id": "Jump 25 Index|2026-08-25T08:00:00+00:00|SELL|closed",
+      "asset": "Jump 25 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 118765.59,
+      "sl": 119096.06,
+      "tp1": 118435.12,
+      "tp2": 118104.65,
+      "tp3": 117774.19,
+      "decimals": 2,
+      "signal_time": "2026-08-25T08:00:00+00:00",
+      "sent_at": "2026-08-25T08:23:47.870278+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T08:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T07:42:46.171063+00:00"
+  "last_updated": "2026-08-25T08:23:48.079959+00:00"
 }
