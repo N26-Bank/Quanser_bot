@@ -136,7 +136,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T08:45:00+00:00"
+      "last_checked_time": "2026-08-25T09:30:00+00:00"
     },
     {
       "id": "Jump 25 Index|2026-08-25T08:00:00+00:00|SELL|closed",
@@ -155,12 +155,35 @@
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": true,
+      "tp2_hit": true,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T09:30:00+00:00"
+    },
+    {
+      "id": "Volatility 75 (1s) Index|2026-08-25T09:30:00+00:00|SELL|closed",
+      "asset": "Volatility 75 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 7251.54,
+      "sl": 7298.38,
+      "tp1": 7204.7,
+      "tp2": 7157.86,
+      "tp3": 7111.03,
+      "decimals": 2,
+      "signal_time": "2026-08-25T09:30:00+00:00",
+      "sent_at": "2026-08-25T09:52:07.989562+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T08:45:00+00:00"
+      "last_checked_time": "2026-08-25T09:30:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T09:08:24.001352+00:00"
+  "last_updated": "2026-08-25T09:52:07.989649+00:00"
 }
