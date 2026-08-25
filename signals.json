@@ -205,7 +205,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T13:00:00+00:00"
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -292,12 +292,12 @@
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
-      "tp1_hit": false,
+      "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T13:00:00+00:00"
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
     },
     {
       "id": "GBPUSD|2026-08-25T13:00:00+00:00|BUY|closed",
@@ -320,7 +320,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T13:00:00+00:00"
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
     },
     {
       "id": "EURUSD|2026-08-25T13:00:00+00:00|BUY|closed",
@@ -343,8 +343,77 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-25T13:00:00+00:00"
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
+    },
+    {
+      "id": "GBPUSD|2026-08-25T14:00:00+00:00|BUY|closed",
+      "asset": "GBPUSD",
+      "engine": "Forex",
+      "direction": "BUY",
+      "entry": 1.36423,
+      "sl": 1.36352,
+      "tp1": 1.36438,
+      "tp2": 1.36559,
+      "tp3": 1.36636,
+      "decimals": 5,
+      "signal_time": "2026-08-25T14:00:00+00:00",
+      "sent_at": "2026-08-25T14:22:17.920616+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
+    },
+    {
+      "id": "EURUSD|2026-08-25T14:00:00+00:00|BUY|closed",
+      "asset": "EURUSD",
+      "engine": "Forex",
+      "direction": "BUY",
+      "entry": 1.16732,
+      "sl": 1.16673,
+      "tp1": 1.16747,
+      "tp2": 1.16872,
+      "tp3": 1.16909,
+      "decimals": 5,
+      "signal_time": "2026-08-25T14:00:00+00:00",
+      "sent_at": "2026-08-25T14:22:20.570941+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
+    },
+    {
+      "id": "Crash 1000 Index|2026-08-25T14:00:00+00:00|SELL|closed",
+      "asset": "Crash 1000 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 6117.222,
+      "sl": 6138.474,
+      "tp1": 6095.97,
+      "tp2": 6074.718,
+      "tp3": 6053.466,
+      "decimals": 3,
+      "signal_time": "2026-08-25T14:00:00+00:00",
+      "sent_at": "2026-08-25T14:22:23.642143+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-25T14:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-25T13:28:32.608229+00:00"
+  "last_updated": "2026-08-25T14:22:25.810438+00:00"
 }
