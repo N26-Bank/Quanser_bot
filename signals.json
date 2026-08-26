@@ -550,7 +550,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T04:00:00+00:00"
+      "last_checked_time": "2026-08-26T04:45:00+00:00"
     },
     {
       "id": "Step Index|2026-08-26T04:00:00+00:00|SELL|closed",
@@ -566,14 +566,14 @@
       "signal_time": "2026-08-26T04:00:00+00:00",
       "sent_at": "2026-08-26T04:24:35.622000+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "LOSS",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-26T04:00:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T04:30:00+00:00",
+      "last_checked_time": "2026-08-26T04:30:00+00:00"
     },
     {
       "id": "Volatility 10 Index|2026-08-26T04:00:00+00:00|SELL|closed",
@@ -589,6 +589,29 @@
       "signal_time": "2026-08-26T04:00:00+00:00",
       "sent_at": "2026-08-26T04:24:36.898619+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "LOSS",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T04:15:00+00:00",
+      "last_checked_time": "2026-08-26T04:15:00+00:00"
+    },
+    {
+      "id": "Volatility 100 (1s) Index|2026-08-26T04:45:00+00:00|SELL|closed",
+      "asset": "Volatility 100 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 769.11,
+      "sl": 778.54,
+      "tp1": 759.68,
+      "tp2": 750.26,
+      "tp3": 740.83,
+      "decimals": 2,
+      "signal_time": "2026-08-26T04:45:00+00:00",
+      "sent_at": "2026-08-26T05:05:32.578740+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": false,
@@ -596,8 +619,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T04:00:00+00:00"
+      "last_checked_time": "2026-08-26T04:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T04:24:36.898709+00:00"
+  "last_updated": "2026-08-26T05:05:32.578820+00:00"
 }
