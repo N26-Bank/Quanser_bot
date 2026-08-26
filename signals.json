@@ -198,14 +198,14 @@
       "signal_time": "2026-08-25T10:15:00+00:00",
       "sent_at": "2026-08-25T10:32:12.368448+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "WIN_THEN_SL",
       "tp1_hit": true,
       "tp2_hit": true,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-26T02:15:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T02:30:00+00:00",
+      "last_checked_time": "2026-08-26T02:30:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-25T10:15:00+00:00|BUY|closed",
@@ -343,7 +343,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T02:15:00+00:00"
+      "last_checked_time": "2026-08-26T03:15:00+00:00"
     },
     {
       "id": "GBPUSD|2026-08-25T14:00:00+00:00|BUY|closed",
@@ -412,7 +412,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T02:15:00+00:00"
+      "last_checked_time": "2026-08-26T03:15:00+00:00"
     },
     {
       "id": "EURUSD|2026-08-25T15:00:00+00:00|BUY|closed",
@@ -428,14 +428,14 @@
       "signal_time": "2026-08-25T15:00:00+00:00",
       "sent_at": "2026-08-25T15:21:45.472536+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "WIN_THEN_SL",
       "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-26T02:15:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T03:00:00+00:00",
+      "last_checked_time": "2026-08-26T03:00:00+00:00"
     },
     {
       "id": "Volatility 90 Index|2026-08-25T15:45:00+00:00|BUY|closed",
@@ -550,8 +550,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T02:15:00+00:00"
+      "last_checked_time": "2026-08-26T03:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T02:40:50.053558+00:00"
+  "last_updated": "2026-08-26T03:39:51.764598+00:00"
 }
