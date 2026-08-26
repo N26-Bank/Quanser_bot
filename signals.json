@@ -729,13 +729,13 @@
       "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
-      "tp1_hit": false,
+      "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T13:30:00+00:00"
+      "last_checked_time": "2026-08-26T14:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T13:54:27.830507+00:00"
+  "last_updated": "2026-08-26T14:43:25.539079+00:00"
 }
