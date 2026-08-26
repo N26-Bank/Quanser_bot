@@ -550,7 +550,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T09:30:00+00:00"
+      "last_checked_time": "2026-08-26T10:15:00+00:00"
     },
     {
       "id": "Step Index|2026-08-26T04:00:00+00:00|SELL|closed",
@@ -688,8 +688,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T09:30:00+00:00"
+      "last_checked_time": "2026-08-26T10:15:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T09:58:48.429152+00:00"
+  "last_updated": "2026-08-26T10:42:36.437723+00:00"
 }
