@@ -550,7 +550,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T08:00:00+00:00"
+      "last_checked_time": "2026-08-26T08:45:00+00:00"
     },
     {
       "id": "Step Index|2026-08-26T04:00:00+00:00|SELL|closed",
@@ -658,15 +658,15 @@
       "signal_time": "2026-08-26T08:00:00+00:00",
       "sent_at": "2026-08-26T08:25:27.312535+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "LOSS",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-26T08:00:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T08:45:00+00:00",
+      "last_checked_time": "2026-08-26T08:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T08:25:27.312638+00:00"
+  "last_updated": "2026-08-26T09:11:50.449243+00:00"
 }
