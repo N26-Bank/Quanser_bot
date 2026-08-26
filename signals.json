@@ -550,7 +550,7 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T07:30:00+00:00"
+      "last_checked_time": "2026-08-26T08:00:00+00:00"
     },
     {
       "id": "Step Index|2026-08-26T04:00:00+00:00|SELL|closed",
@@ -635,6 +635,29 @@
       "signal_time": "2026-08-26T07:30:00+00:00",
       "sent_at": "2026-08-26T07:45:21.944827+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "LOSS",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T07:45:00+00:00",
+      "last_checked_time": "2026-08-26T07:45:00+00:00"
+    },
+    {
+      "id": "Volatility 25 Index|2026-08-26T08:00:00+00:00|BUY|closed",
+      "asset": "Volatility 25 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "BUY",
+      "entry": 2626.333,
+      "sl": 2615.135,
+      "tp1": 2637.531,
+      "tp2": 2648.73,
+      "tp3": 2659.928,
+      "decimals": 3,
+      "signal_time": "2026-08-26T08:00:00+00:00",
+      "sent_at": "2026-08-26T08:25:27.312535+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": false,
@@ -642,8 +665,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-26T07:30:00+00:00"
+      "last_checked_time": "2026-08-26T08:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T07:45:21.944907+00:00"
+  "last_updated": "2026-08-26T08:25:27.312638+00:00"
 }
