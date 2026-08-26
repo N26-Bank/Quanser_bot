@@ -704,15 +704,15 @@
       "signal_time": "2026-08-26T11:30:00+00:00",
       "sent_at": "2026-08-26T11:48:17.549860+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "LOSS",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-26T11:30:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-26T11:45:00+00:00",
+      "last_checked_time": "2026-08-26T11:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-26T11:48:17.874663+00:00"
+  "last_updated": "2026-08-26T12:50:41.495977+00:00"
 }
