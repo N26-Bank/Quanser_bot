@@ -819,15 +819,15 @@
       "signal_time": "2026-08-27T14:00:00+00:00",
       "sent_at": "2026-08-27T14:27:30.461914+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
-      "tp2_hit": false,
-      "tp3_hit": false,
+      "status": "CLOSED",
+      "outcome": "WIN",
+      "tp1_hit": true,
+      "tp2_hit": true,
+      "tp3_hit": true,
       "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-27T14:00:00+00:00"
+      "resolved_at": "2026-08-27T22:45:00+00:00",
+      "last_checked_time": "2026-08-27T22:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-27T14:27:31.661436+00:00"
+  "last_updated": "2026-08-27T23:53:27.025303+00:00"
 }
