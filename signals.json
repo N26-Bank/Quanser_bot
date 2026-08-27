@@ -750,14 +750,14 @@
       "signal_time": "2026-08-26T21:45:00+00:00",
       "sent_at": "2026-08-26T22:10:49.613650+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "WIN",
       "tp1_hit": true,
       "tp2_hit": true,
-      "tp3_hit": false,
+      "tp3_hit": true,
       "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-27T03:00:00+00:00"
+      "resolved_at": "2026-08-27T08:45:00+00:00",
+      "last_checked_time": "2026-08-27T08:45:00+00:00"
     },
     {
       "id": "Volatility 75 (1s) Index|2026-08-26T21:45:00+00:00|BUY|closed",
@@ -773,14 +773,14 @@
       "signal_time": "2026-08-26T21:45:00+00:00",
       "sent_at": "2026-08-26T22:10:51.919774+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "WIN",
       "tp1_hit": true,
-      "tp2_hit": false,
-      "tp3_hit": false,
+      "tp2_hit": true,
+      "tp3_hit": true,
       "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-27T03:00:00+00:00"
+      "resolved_at": "2026-08-27T04:45:00+00:00",
+      "last_checked_time": "2026-08-27T04:45:00+00:00"
     },
     {
       "id": "Volatility 75 Index|2026-08-27T03:00:00+00:00|BUY|closed",
@@ -796,6 +796,29 @@
       "signal_time": "2026-08-27T03:00:00+00:00",
       "sent_at": "2026-08-27T03:19:11.426632+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "WIN",
+      "tp1_hit": true,
+      "tp2_hit": true,
+      "tp3_hit": true,
+      "sl_hit": false,
+      "resolved_at": "2026-08-27T03:15:00+00:00",
+      "last_checked_time": "2026-08-27T03:15:00+00:00"
+    },
+    {
+      "id": "Volatility 100 Index|2026-08-27T14:00:00+00:00|BUY|closed",
+      "asset": "Volatility 100 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "BUY",
+      "entry": 610.76,
+      "sl": 605.26,
+      "tp1": 616.26,
+      "tp2": 621.75,
+      "tp3": 627.25,
+      "decimals": 2,
+      "signal_time": "2026-08-27T14:00:00+00:00",
+      "sent_at": "2026-08-27T14:27:30.461914+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": false,
@@ -803,8 +826,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-27T03:00:00+00:00"
+      "last_checked_time": "2026-08-27T14:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-27T03:19:13.676982+00:00"
+  "last_updated": "2026-08-27T14:27:31.661436+00:00"
 }
