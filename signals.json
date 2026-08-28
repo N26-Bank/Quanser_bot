@@ -842,15 +842,15 @@
       "signal_time": "2026-08-28T09:30:00+00:00",
       "sent_at": "2026-08-28T09:48:31.389782+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
+      "status": "CLOSED",
+      "outcome": "WIN_THEN_SL",
+      "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-28T09:30:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-28T12:45:00+00:00",
+      "last_checked_time": "2026-08-28T12:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-28T09:48:31.389867+00:00"
+  "last_updated": "2026-08-28T21:06:55.120139+00:00"
 }
