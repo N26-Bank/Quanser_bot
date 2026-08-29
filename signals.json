@@ -911,6 +911,29 @@
       "signal_time": "2026-08-29T18:00:00+00:00",
       "sent_at": "2026-08-29T18:29:35.674204+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "LOSS",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": true,
+      "resolved_at": "2026-08-29T18:15:00+00:00",
+      "last_checked_time": "2026-08-29T18:15:00+00:00"
+    },
+    {
+      "id": "Crash 1000 Index|2026-08-29T20:45:00+00:00|SELL|closed",
+      "asset": "Crash 1000 Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 5901.109,
+      "sl": 5907.65,
+      "tp1": 5894.568,
+      "tp2": 5888.027,
+      "tp3": 5881.487,
+      "decimals": 3,
+      "signal_time": "2026-08-29T20:45:00+00:00",
+      "sent_at": "2026-08-29T21:07:03.515473+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": false,
@@ -918,8 +941,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-29T18:00:00+00:00"
+      "last_checked_time": "2026-08-29T20:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-29T18:29:35.674301+00:00"
+  "last_updated": "2026-08-29T21:07:05.503319+00:00"
 }
