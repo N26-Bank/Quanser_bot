@@ -865,14 +865,14 @@
       "signal_time": "2026-08-29T14:45:00+00:00",
       "sent_at": "2026-08-29T15:04:20.892988+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "LOSS",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-29T14:45:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-29T16:15:00+00:00",
+      "last_checked_time": "2026-08-29T16:15:00+00:00"
     },
     {
       "id": "Volatility 10 (1s) Index|2026-08-29T14:45:00+00:00|BUY|closed",
@@ -888,6 +888,29 @@
       "signal_time": "2026-08-29T14:45:00+00:00",
       "sent_at": "2026-08-29T15:04:22.087682+00:00",
       "is_live_candle": false,
+      "status": "CLOSED",
+      "outcome": "LOSS",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": true,
+      "resolved_at": "2026-08-29T15:15:00+00:00",
+      "last_checked_time": "2026-08-29T15:15:00+00:00"
+    },
+    {
+      "id": "Volatility 50 (1s) Index|2026-08-29T18:00:00+00:00|SELL|closed",
+      "asset": "Volatility 50 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 215341.52,
+      "sl": 215837.63,
+      "tp1": 214845.41,
+      "tp2": 214349.3,
+      "tp3": 213853.19,
+      "decimals": 2,
+      "signal_time": "2026-08-29T18:00:00+00:00",
+      "sent_at": "2026-08-29T18:29:35.674204+00:00",
+      "is_live_candle": false,
       "status": "OPEN",
       "outcome": "PENDING",
       "tp1_hit": false,
@@ -895,8 +918,8 @@
       "tp3_hit": false,
       "sl_hit": false,
       "resolved_at": null,
-      "last_checked_time": "2026-08-29T14:45:00+00:00"
+      "last_checked_time": "2026-08-29T18:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-29T15:04:22.087784+00:00"
+  "last_updated": "2026-08-29T18:29:35.674301+00:00"
 }
