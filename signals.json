@@ -942,7 +942,30 @@
       "sl_hit": true,
       "resolved_at": "2026-08-29T21:15:00+00:00",
       "last_checked_time": "2026-08-29T21:15:00+00:00"
+    },
+    {
+      "id": "Volatility 10 (1s) Index|2026-08-30T01:00:00+00:00|SELL|closed",
+      "asset": "Volatility 10 (1s) Index",
+      "engine": "Deriv Synthetic",
+      "direction": "SELL",
+      "entry": 9878.21,
+      "sl": 9887.05,
+      "tp1": 9869.37,
+      "tp2": 9860.54,
+      "tp3": 9851.7,
+      "decimals": 2,
+      "signal_time": "2026-08-30T01:00:00+00:00",
+      "sent_at": "2026-08-30T01:27:35.165878+00:00",
+      "is_live_candle": false,
+      "status": "OPEN",
+      "outcome": "PENDING",
+      "tp1_hit": false,
+      "tp2_hit": false,
+      "tp3_hit": false,
+      "sl_hit": false,
+      "resolved_at": null,
+      "last_checked_time": "2026-08-30T01:00:00+00:00"
     }
   ],
-  "last_updated": "2026-08-29T23:19:48.382558+00:00"
+  "last_updated": "2026-08-30T01:27:35.165968+00:00"
 }
