@@ -1210,14 +1210,14 @@
       "signal_time": "2026-08-31T14:00:00+00:00",
       "sent_at": "2026-08-31T14:27:13.958733+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
-      "tp1_hit": false,
+      "status": "CLOSED",
+      "outcome": "WIN_THEN_SL",
+      "tp1_hit": true,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-31T14:00:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-31T15:30:00+00:00",
+      "last_checked_time": "2026-08-31T15:30:00+00:00"
     },
     {
       "id": "Volatility 50 (1s) Index|2026-08-31T14:00:00+00:00|BUY|closed",
@@ -1233,15 +1233,15 @@
       "signal_time": "2026-08-31T14:00:00+00:00",
       "sent_at": "2026-08-31T14:27:17.037023+00:00",
       "is_live_candle": false,
-      "status": "OPEN",
-      "outcome": "PENDING",
+      "status": "CLOSED",
+      "outcome": "LOSS",
       "tp1_hit": false,
       "tp2_hit": false,
       "tp3_hit": false,
-      "sl_hit": false,
-      "resolved_at": null,
-      "last_checked_time": "2026-08-31T14:00:00+00:00"
+      "sl_hit": true,
+      "resolved_at": "2026-08-31T14:45:00+00:00",
+      "last_checked_time": "2026-08-31T14:45:00+00:00"
     }
   ],
-  "last_updated": "2026-08-31T14:27:17.570522+00:00"
+  "last_updated": "2026-08-31T15:57:48.144977+00:00"
 }
